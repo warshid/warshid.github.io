@@ -1,14 +1,904 @@
----
-layout: default
-title: Waqas Personal Site
----
-<div id="nav">
-</div>
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Waqas Arshid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel=stylesheet href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <!--<link rel=stylesheet href="css/style.css">-->
+    <link rel=stylesheet href="css/dark-theme.css">
+    <!--<link rel=stylesheet href="css/light-theme.css">-->
+    <!--[if lt IE 9]>
+    <link href="css/ie8.css" rel="stylesheet" type="text/css" />
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target="#mainNav" data-offset="100">
+    <header>
+        <div class='container'>
+            <div class='row'>
+                <div class='span3'>
+                    <figure class='logo'>
+                    </figure>
+                </div>
+                <nav class='span6'>
+                    <div id='mainNav'>
+                        <ul class='nav'>
+                            <li class='active'><a data-target="#home" href="index.html#home">Home</a></li>
+                            <li><a data-target="#services" href="index.html#about">About Me</a></li>
+                            <li><a data-target="#portfolio" href="index.html#work">Work</a></li>
+                            <li><a data-target="#about" href="index.html#interests">Interests</a></li>
+                            <li><a href="blog.html">Saltire Blog</a></li>
+                            <li><a data-target="#contact" href="index.html#contact">Contact</a></li>
+                            <li><a href="CV_Waqas_Arshid.pdf">Resume</a></li>
+                        </ul>
+                        <div class='active-indicator hidden-phone'></div>
+                    </div>
+                </nav>
+                <div class='span3'>
+                    <ul class='social-icons'>
+                        <li><a href="https://www.facebook.com/waqas.arshid" class='social facebook'></a></li>
+                        <li><a href="http://twitter.com/wmarshid" class='social twitter'></a></li>
+                        <li><a href="https://plus.google.com/u/2/109233894417310590002/posts/p/pub" class='social googleplus'></a></li>
+                        <li><a href="http://uk.linkedin.com/in/wmarshid" class='social vimeo'></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class='scrollable-container'>
+        <section class='homepage-slider' id='home'>
+             <ul class='slides'>
+                <li style='background-image: url("img/portfolio/10.jpg");'>
+                    <!--<img src="img/slider01.jpg" alt=""/>-->
+                </li>
+                <li style='background-image: url("img/portfolio/05.jpg");'>
+                    <!--<img src="img/samples/01.jpg" alt=""/>-->
+                </li>
+            </ul>
+            <div class='text-section'>
+                <div class='container'>
+                    <div class='row'>
+                        <div class='span12'>
+                            <span class='title'>Hi! <br /> My name is Waqas.</span>
+                            <span class='sub-title'>I will be spending the summer in New York City <br /> working with AIG as a Software Architect.</span>
+                            <span class='sub-title'>Feel free to look around and find out more about me.</span>
+                            <a href="mailto:waqas@arshid.me?subject=Hi" class='homepage-slider-button'>Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='section-title' id='about'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span12'>
+                        <h1>About Me</h1>
+                        <h2>I'm a small town boy. Born and brought up in Dundee, Scotland (pop. 141,870).<br /> I'm keen to get out there and show the world what I can do!</h2>
+                    </div>
+                    <div class='section-diamond'></div>
+                </div>
+            </div>
+        </section>
+        <section class='section-services'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span4 services-box'>
+                        <div class='services-diamond'>
+                            <div class='content'></div>
+                            <div class='services-icon design'></div>
+                            <div class='services-tail'></div>
+                            <div class='bottom-diamond'></div>
+                        </div>
+                        <div class='bottom'>
+                            <h3>Student</h3>
+                            <h4>
+                                I am currently a Computer Science student at the University of St Andrews.<br />I have been in higher education for three years and due to graduate in 2014.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class='span4 services-box'>
+                        <div class='services-diamond'>
+                            <div class='content'></div>
+                            <div class='services-icon support'></div>
+                            <div class='services-tail'></div>
+                            <div class='bottom-diamond'></div>
+                        </div>
+                        <div class='bottom'>
+                            <h3>Volunteer</h3>
+                            <h4>I love to give my time to good causes in my community. With Charity Week Scotland we helped raise over &pound;65,000 for orphans and needy children.<br />As part of the <a href="http://www.stemnet.org.uk/content/stem-ambassadors" alt="STEM Ambassador scheme">STEM Ambassors</a> scheme I help promote STEM diciplines in local schools.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class='span4 services-box'>
+                        <div class='services-diamond'>
+                            <div class='content'></div>
+                            <div class='services-icon coding'></div>
+                            <div class='services-tail'></div>
+                            <div class='bottom-diamond'></div>
+                        </div>
+                        <div class='bottom'>
+                            <h3>Developer</h3>
+                            <h4>
+                                I have experience working on various projects and I hope to expand on this by working with a wide variety of systems. This experience paired with my technical competence, is a valuable asset to have when assimilating into a company&#39;s workflow.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='section-title' id='work'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span12'>
+                        <h1>Portfolio</h1>
+                        <h2>Projects I've worked on and contributed to.</h2>
+                    </div>
+                    <div class='section-diamond'></div>
+                </div>
+            </div>
+        </section>
+        <section class='portfolio-slider section-default'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span8 offset2'>
+                        <div id='portfolioSlider'>
+                            <ul class='slides'>
+                                <li>
+                                    <img src="img/cw/total.jpg" alt=""/>
+                                    <div class='border'>
+                                        <a href="#" class='switcher add' rel='project04'>Switcher</a>
+                                    </div>
+                                    <h3>TOTAL AMOUNT RAISED BY <br /> CHARITY WEEK SCOTLAND TEAM</h3>
+                                    <h4>
+                                        The first official Charity Week was launched in 2004, with almost 20 University Islamic Societies (Isocs) and Islamic Relief supporting this noble venture. in the UK alone over &pound;1 Million has been raised for orphans and needy children.
+                                    </h4>
+                                </li>
+                                <li>
+                                    <img src="img/hack/dave.jpg" alt=""/>
+                                    <div class='border'>
+                                        <a href="#" class='switcher'><i>Switcher</i></a>
+                                    </div>
+                                    <h3>MEETING DAVID CAMERON <br /> THE BRITISH PRIME MINISTER</h3>
+                                    <h4>
+                                        A portrait of Augusta Ada King, Countess of Lovelace, took pride of place in one of the reception rooms of 10 Downing Street. <a href="http://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a> is widely regarded as the first computer programmer.
+                                    </h4>
+                                </li>
+                                <li>
+                                    <img src="img/hack/brainstorm.jpg" alt=""/>
+                                    <div class='border'>
+                                        <a href="#" class='switcher'>Switcher</a>
+                                    </div>
+                                    <h3>BRAINSTORMING IDEAS <br /> AT THE EDINBURGH APPATHON</h3>
+                                    <h4>
+                                        Our group worked over two days to produce a cohesive business model and prototype application for the Silicon Valley comes to the UK appathon.
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='portfolio-details section-default'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span10 offset1'>
+                        <div class='portfolio-menu'>
+                            <ul>
+                                <li class='active'><a href="#" data-filter='*'>All</a></li>
+                                <li><a href="#" data-filter='.work'>Work</a></li>
+                                <li><a href="#" data-filter='.hack'>Hackathons</a></li>
+                                <li><a href="#" data-filter='.web'>Web</a></li>
+                                <li><a href="#" data-filter='.volunteering'>Volunteering</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='projects-slider span10 offset1'>
+                        <div class='portfolio-box hack'>
+                            <figure>
+                                <img src="img/hack/conf.jpg" alt=""/>
+                                <a href="#" class='add' rel='project01'><i></i></a>
+                                <a href="img/hack/dave.jpg" rel='prettyPhoto' title='Fullscreen Project' class='fullscreen'><i></i></a>
+                            </figure>
+                            <h3>SVC2UK 2011</h3>
+                            <p>
+                                I was part of a team of finalists, shortlised above 850 other teams, in this national competition judged by representatives from Silicon Valley companies, including Google.
+                            </p>
+                            <span class='arrow-icon'></span>
+                        </div>
+                        <div class='portfolio-box web'>
+                            <figure>
+                                <img src="img/dev/ptsimon.png" alt=""/>
+                                <a href="#" class='add' rel='project02'><i></i></a>
+                                <a href="img/dev/simon_intro.png" rel='prettyPhoto' title='Fullscreen Project' class='fullscreen'><i></i></a>
+                            </figure>
+                            <h3>PT Simon</h3>
+                            <p>
+                                Portfolio piece for professional client who is a fitness trainer. Delivered within time and on budget.
+                            </p>
+                            <span class='arrow-icon'></span>
+                        </div>
+                        <div class='portfolio-box hack'>
+                            <figure>
+                                <img src="img/hack/uclf_group.jpg" alt=""/>
+                                <a href="#" class='add' rel='project03'><i></i></a>
+                                <a href="img/hack/uclf_team.jpg" rel='prettyPhoto' title='Fullscreen Project' class='fullscreen'><i></i></a>
+                            </figure>
+                            <h3>Hackin&#39; the City</h3>
+                            <p>
+                                Organised by the UCL Financial Industry Series in partnership with Bank of America Merrill Lynch, J.P. Morgan and The Royal Bank of Scotland.
+                            </p>
+                            <span class='arrow-icon'></span>
+                        </div>
+                        <div class='portfolio-box web'>
+                            <figure>
+                                <img src="img/dev/steeple.png" alt=""/>
+                                <a href="#" class='add' rel='project04'><i></i></a>
+                                <a href="img/dev/asteeple_site.png" rel='prettyPhoto' title='Fullscreen Project' class='fullscreen'><i></i></a>
+                            </figure>
+                            <h3>Aauld Steeple</h3>
+                            <p>
+                                My first web project for a small, family-run guest house from where my computing interest was sparked. Still being maintained to this day.
+                            </p>
+                            <span class='arrow-icon'></span>
+                        </div>
+                        <div class='portfolio-box volunteering'>
+                            <figure>
+                                <img src="img/cw/scotland_cake.jpg" alt=""/>
+                                <a href="#" class='add' rel='project05'><i></i></a>
+                                <a href="img/cw/total.jpg" rel='prettyPhoto' title='Fullscreen Project' class='fullscreen'><i></i></a>
+                            </figure>
+                            <h3>Charity Week 2012</h3>
+                            <p>
+                                If you believe in something, if you
+                                fight for that something, it's
+                                almost a fact that you'll get it.
+                            </p>
+                            <span class='arrow-icon'></span>
+                        </div>
+                        <div class='portfolio-box work'>
+                            <figure>
+                                <img src="img/saltire/group.jpg" alt=""/>
+                                <a href="#" class='add' rel='project06'><i></i></a>
+                                <a href="img/saltire/group.jpg" rel='prettyPhoto' title='Fullscreen Project' class='fullscreen'><i></i></a>
+                            </figure>
+                            <h3>Saltire Scholar</h3>
+                            <p>
+                                This summer I will be on placement with AIG, one of the world's biggest companies. This internship comes courtasy of the <a href="http://www.twitter.com/thesaltiref">Saltire Foundation.</a>
+                            </p>
+                            <span class='arrow-icon'></span>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project01'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/hack/dave.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/hack/brainstorm.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        Our team created a product called 'eyeSore' which aimed to empower local communities to act on problem issues and come together. </p> 
+                                    <p> Find the local eyeSores around you.
+By using this app individuals can report problems within their local area by sending visual and gps data to the eyeSore server. eyeSore brings together the local community, authorities and businesses to tackle local problems. </p>
+                                    <p> We attended an awards ceremony held by Prime Minister David Cameron at 10 Downing Street and were invited to present our product at the &#39;Silicon Valley comes to Tech City&#39; conference in London. While also being featured in <a href="http://www.bbc.co.uk/news/business-15770190">BBC News</a> coverage.
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>Business Plan</li>
+                                    </ul>
+                                </div>
+                                <a href="http://www.eyesore-server.appspot.com/" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project02'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/dev/simon_intro.png" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/dev/simon_price.png" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        I was approached by a fitness trainer looking to expand his clientelle by creating an online profile of his services </p>
+                                    <p>
+                                        Together we 
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>Client engagement</li>
+                                    </ul>
+                                </div>
+                                <a href="http://ptsimon.co.uk" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project03'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/hack/uclf_pres.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/hack/uclf_team.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/hack/uclf_group.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        The Hackin&#39; The City Hackathon brought together 55 students from a dozen of top universities in the UK to pit their skills in a round-the-clock hackathon to design and develop an application over 24 hours.
+                                    </p>
+                                    <p>
+                                        The aim of our project was to enable the creation and validation of safe buildings that have optimal escape routes in the event of disasters. Through the use of pathfinding algorithms, building floor plans can be analysed and statistics presented. Subsequently through these adjustments, improvements can be made in order to aid safety in the event of an emergency.
+                                    </p>
+                                    <p>
+                                        On Sunday morning, 12 teams presented their value proposition, technology solution and ran a live demo of their projects. Judges after long deliberation came up with six finalists. By 1530 on Sunday after 25 minutes of intense debate, senior judges awarded our team 3rd place and we each received Amazon vouchers.
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>Lack of sleep</li>
+                                    </ul>
+                                </div>
+                                <a href="http://hackinthecity.com/" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project04'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        This was my first website
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>Maintenance</li>
+                                    </ul>
+                                </div>
+                                <a href="aauldsteepleguesthouse.co.uk" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project05'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                       Charity week scotland..
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Unity</li>
+                                        <li>Fundraising</li>
+                                        <li>Bettering lives</li>
+                                    </ul>
+                                </div>
+                                <a href="http://www.onecharityweek.com/‎" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project06'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/saltire/mingling.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/saltire/group.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        The Saltire foundation is awesome
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Networking</li>
+                                        <li>Leadership</li>
+                                        <li>Entrepreneurship</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project07'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        If you think you're beaten, you are.If you don't, you are not. If you
+                                        think you'll lose, you're lost - Success begins with a state of mind, one
+                                        that supports your dreams.You've got to be sure of yourself, you must
+                                        not let yourself down, sooner or later - The man who wins is the man
+                                        who thinks he can.
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>User experience</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project08'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        If you think you're beaten, you are.If you don't, you are not. If you
+                                        think you'll lose, you're lost - Success begins with a state of mind, one
+                                        that supports your dreams.You've got to be sure of yourself, you must
+                                        not let yourself down, sooner or later - The man who wins is the man
+                                        who thinks he can.
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>User experience</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project09'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        If you think you're beaten, you are.If you don't, you are not. If you
+                                        think you'll lose, you're lost - Success begins with a state of mind, one
+                                        that supports your dreams.You've got to be sure of yourself, you must
+                                        not let yourself down, sooner or later - The man who wins is the man
+                                        who thinks he can.
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>User experience</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project10'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        If you think you're beaten, you are.If you don't, you are not. If you
+                                        think you'll lose, you're lost - Success begins with a state of mind, one
+                                        that supports your dreams.You've got to be sure of yourself, you must
+                                        not let yourself down, sooner or later - The man who wins is the man
+                                        who thinks he can.
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>User experience</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project11'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        If you think you're beaten, you are.If you don't, you are not. If you
+                                        think you'll lose, you're lost - Success begins with a state of mind, one
+                                        that supports your dreams.You've got to be sure of yourself, you must
+                                        not let yourself down, sooner or later - The man who wins is the man
+                                        who thinks he can.
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>User experience</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project12'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        If you think you're beaten, you are.If you don't, you are not. If you
+                                        think you'll lose, you're lost - Success begins with a state of mind, one
+                                        that supports your dreams.You've got to be sure of yourself, you must
+                                        not let yourself down, sooner or later - The man who wins is the man
+                                        who thinks he can.
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>User experience</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='span8 offset2 project-details' rel='project13'>
+                        <div class='row'>
+                            <div class='span4'>
+                                <div class='screenshot-slider'>
+                                    <ul class='slides'>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                        <li>
+                                            <figure><img src="img/3252b528343511e283fe22000a1d0118_7.jpg" alt=""/></figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <div class='project-description'>
+                                    <p>
+                                        If you think you're beaten, you are.If you don't, you are not. If you
+                                        think you'll lose, you're lost - Success begins with a state of mind, one
+                                        that supports your dreams.You've got to be sure of yourself, you must
+                                        not let yourself down, sooner or later - The man who wins is the man
+                                        who thinks he can.
+                                    </p>
+                                </div>
+                                <div class='tags'>
+                                    <ul>
+                                        <li>Design</li>
+                                        <li>Coding</li>
+                                        <li>User experience</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class='btn custom-button'>Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class='section-parallax under-portfolio'>
+            <div class='bg-image'>
+                <div class='container'>
+                    <div class='row'>
+                        <div class='span12 quote-slider'>
+                            <ul class='slides'>
+                                <li>
+                                    <div class='row'>
+                                        <div class='span6 offset3'>
+                                            <span class='quote'>
+                                                <span class='left-quote'>&ldquo;</span>
+                                                If you wish to make an apple pie from scratch, <br />                                                   you must first invent the universe.
+                                                <span class='right-quote'>&bdquo;</span>
+                                            </span>
+                                            <span class='quote-author'>
+                                                Carl Sagan
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class='row'>
+                                        <span class='quote'>
+                                            <span class='left-quote'>&ldquo;</span>
+                                            I am the wisest man alive, for I know one thing, <br />
+                                            and that is that I know nothing.
+                                            <span class='right-quote'>&bdquo;</span>
+                                        </span>
+                                        <span class='quote-author'>
+                                            Socrates
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='section-title' id='interests'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span12'>
+                        <h1>Interests</h1>
+                        <h2>Who, How, Why? Here we answer these questions</h2>
+                    </div>
+                    <div class='section-diamond'></div>
+                </div>
+            </div>
+        </section>
+        <section class='section-default section-about'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span10 offset1'>
+                        <h3><img src="img/logo.png" alt=""/></h3>
+                        <p class='description'>
+                            We are <strong>TeoThemes</strong>, we develop high-end wordpress
+                            themes through ThemeForest, we try to cover every
+                            niche possible and be creative.
+                        </p>
+                        <h3>Skills</h3>
+                        <p class='description'>
+                            How we do it and what we use
+                        </p>
+                        <span class='progress-info'>Javascript</span>
+                        <div class="progress">
+                            <div class="bar" style="width: 50%;"></div>
+                        </div>
+                        <span class='progress-info'>Illustrator</span>
+                        <div class="progress">
+                            <div class="bar" style="width: 65%;"></div>
+                        </div>
+                        <span class='progress-info'>Photoshop</span>
+                        <div class="progress">
+                            <div class="bar" style="width: 80%;"></div>
+                        </div>
+                        <span class='progress-info'>HTML&CSS</span>
+                        <div class="progress">
+                            <div class="bar" style="width: 60%;"></div>
+                        </div>
+            </div>
+        </section>
+        <section class='section-title' id='contact'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span12'>
+                        <h1>Contact</h1>
+                        <h2>How to get in touch with me</h2>
+                    </div>
+                    <div class='section-diamond'></div>
+                </div>
+            </div>
+        </section>
+        <section class='section-default section-contact'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span10 offset1'>
+                        <div class='row'>
+                            <div class='span6'>
+                                <h3>I love cooookies</h3>
+                                <div class='span4'>
+                                    <h3>Facebook</h3>
+                                </div>
+                            </div>
+                            <div class='span4'>
+                                <h3>Contact Info</h3>
+                                <p class='description'>
+                                    Waqas Arshid
+                                </p>
+                                <address>
+                                    1760 Third Avenue <br />
+                                    New York City, NY
+                                </address>
+                                <address>
+                                    Email: waqas@arshid.me
+                                </address>
+                                <address>
+                                    Phone Number: +44 (0) 7748 751572
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span10 offset1'>
+                        <p>
+                            &copy; 2013-2014 Waqas Arshid.
+                            Lovingly crafted with <a href="http://jekyllrb.com/" title="Jekyll Ruby">Jekyll</a> 
+                            and hosted on <a href="http://pages.github.com/" title="Github Pages">Github Pages</a>.
+                            Theme courtasy of <a href="http://teothemes.com" title="WordPress themes">TeoThemes</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/tinynav.min.js"></script>
+    <script type="text/javascript" src='js/jquery.placeholder.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='js/parallax.js'></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
