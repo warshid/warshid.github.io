@@ -1,5 +1,5 @@
 name: Waqas Arshid
 safe: true
 lsi: false
-pygments: true
+pygments: false
 markdown: kramdown
