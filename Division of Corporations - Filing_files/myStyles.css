@@ -1,0 +1,827 @@
+/***  YOUR SITES STYLES  ***/
+/* Any styles you need to add can be placed here. */  
+/* Note: there is a great number of preset styles in the global stylesheet */
+
+.gridheader
+{
+    background-color:#336699;
+    vertical-align:bottom;
+    color:#ffffff;
+    font-weight:bold;
+    font-size:12px;
+}
+
+.labelarea {
+   font-size:12px;
+   color:#3A3A3A;
+   text-align:right;
+   font-weight:bold;
+   padding:5px;
+}
+
+.labelheading {
+  color:#999999;
+  font-weight:bold;
+}
+.lblLoginHeading
+{
+	text-decoration: none;
+}
+.lblLoginHeading:hover
+{
+	color: #003399;
+	cursor: default;
+}
+.fieldarea {
+   text-align:left;
+}
+
+.fieldcontent {
+   color:#585858;
+}
+
+/* Tree */
+.menutitle{
+	cursor:hand;
+	color: #333333;
+	background-color: transparent; 
+	font-weight: normal;
+	font-size: 90%;
+}
+
+.submenu{
+	font-size: 90%;
+	margin-top:1px;
+	padding-bottom:4px;
+}
+
+
+
+/* End of Tree */
+
+/* required field and error */
+.reqdfield {
+	color:#FF0000;
+	font-size: 12px;
+}
+
+.reqdtxt {
+	color:#FF0000;
+	font-size: 12px;
+}
+
+
+/* Login Box Section */ 
+.loginbutton {
+  border: 2px solid #737300;
+  color:#5A5A00; 
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:normal;
+  font-size:12px;
+  background-color:#ffffff;
+  outline:none;
+}
+
+.loginbuttonSubmit {
+  border: 4px solid #737300;
+  color:#5A5A00; 
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:normal;
+  font-size:12px;
+  background-color:#ffffff;
+  outline:none;
+}
+
+.loginlayout {
+   border:2px solid #CCCCCC; 
+ }
+
+.loginheader{
+  background-color:#EDEDC1; 
+  color:#000000; 
+  font-weight:bold; 
+  height:20px; 
+  margin-bottom:15px; 
+  padding-top:5px;
+  padding-bottom:3px;
+  padding-left:20px; 
+  text-align:left;
+}
+/* End of Login box Section */
+
+
+.FormatTableHeader
+{
+	font-weight: bold;
+	background-color: #F3F3F3; 
+	color: #000000;
+	font-size: 8pt;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+.FormatTableData
+{
+	font-size: 8pt;
+	color: #000000;
+	vertical-align: top;
+}
+.CustomListItem { list-style-position: outside; list-style-type: square; }
+
+/* Breadcrumb */
+
+.breadcrumbbg {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:110%;
+	color:#00308F;
+	padding:0px 5px 0px 5px;
+		
+	/*background-color:#DDDBDB;*/
+} 
+
+.breadcrumbbgarea {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#00308F;
+	padding:5px;
+	background-color:#DDDBDB;
+}
+
+a.breadcrumb {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+a.breadcrumb:hover a.breadcrumb:active {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+a.breadcrumb:visited {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+
+.activebreadcrumb {
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:90%;
+	color:#FFFFFF;
+	font-weight:bold;
+	padding:5px 8px 5px 8px;
+	background-color:#B5B3B3;
+	text-decoration:underline;
+}
+
+/* Franchisee Heading */
+.franchisetableheading {
+   color:#ffffff;
+   text-align:center;
+   font-weight:bold;
+   padding:4px;
+   background-color:#9C9C9C;
+   font-size:90%;
+}
+
+/* Franchisee table content and alternate  */   
+
+.franchisetabledata {
+   color:#000000;
+   font-weight:normal;
+   padding:4px;
+   background-color:#AACDF8;
+
+}  
+
+.franchisetabledataalternate {
+   color:#000000;
+   font-weight:normal;
+   padding:4px;
+   background-color:#E3E3E3;
+
+
+} 
+
+.gridheadercollapse {
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+    border-top:1px solid #CCCCCC;
+    border-bottom:1px solid #CCCCCC;
+}
+
+/* Franchisee Heading */
+.franchisetableheadingtax {
+   color:#000000;
+   text-align:center;
+   font-weight:bold;
+   padding:4px;
+   background-color:#D7D7D7;
+   font-size:90%;
+   
+   border:1px solid #000000;
+}
+
+/* Franchisee table content and alternate  */    /*background-color:#AACDF8;*/
+  
+.franchisetabledatatax {
+   color:#000000;
+   font-weight:normal;
+   padding:1px;
+   border:1px solid #000000;
+}  
+
+.franchisetabledataalternatetax {
+   color:#000000;
+   font-weight:normal;
+   padding:1px;
+   background-color:#E3E3E3;
+   border-style: double;
+   border-color: #000000;
+} 
+
+/* Franchisee table border and heading */
+.gridheaderborder {
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+}
+
+.gridheadercollapsetax {
+   border:1px solid #000000;
+}
+
+.gridheaderbg {
+ background-image:url(../images/headerstrip.gif);
+ background-repeat:repeat-x;
+ padding-left:8px; 
+ font-weight:bold;
+ height:24px;
+}
+
+
+/* Multiple Debtor Grid */
+
+
+.gridview .actions div {
+	float: right;
+	padding-right: 2px;
+	text-align: right;
+	width: 95px;
+}
+
+.gridview .edit td,.gridview .create td {
+	background: #DAFFCD;
+	padding: 4px;
+	border-bottom: solid 2px #FFFFFF;
+	border-top: solid 2px #FFFFFF;
+}
+
+.gridview td {
+	background-color:#AACDF8; color:#000000; padding:3px;font-family:Arial, Helvetica, sans-serif;
+	/*background: #D7E6F4;
+	border-bottom: solid 1px #C5DBF7;
+	color: #333333;
+	font: small "Segoe UI", Segoe, sans-serif;
+	padding: 5px 4px;*/
+}
+.gridview td a{
+	background-color:#AACDF8; color:#000000; padding:3px;font-family:Arial, Helvetica, sans-serif;
+	/*color: #0066CC;
+	font: bold small "Segoe UI",Segoe,sans-serif;
+	padding: 2px;
+	text-decoration: none;*/
+}
+.gridview td a:hover {
+	color: #333333;
+	font-weight: bold;
+}
+.gridview th {
+	background-color:#9C9C9C; width:25%; color:#FFFFFF; font-weight:bold; padding:3px;font-family:Arial, Helvetica, sans-serif;
+	
+	/*background: #4168BD;
+	color: #FFFFFF;
+	font: small "Segoe UI", Segoe, sans-serif;
+	letter-spacing: 0;
+	padding: 4px;
+	text-align: left;*/
+}
+.gridfooter {
+	background-color:#9C9C9C;  color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;
+	
+}
+.gridview th a{
+	color: #FFFFFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.gridview th a:hover{
+	color: #00FF00;
+}
+.gridview tr.even td,.detailsview tr.even td{
+	background-color:#E3E3E3; color:#000000; padding:3px;
+	/*background: #FFFFFF;*/
+}
+.gridview tr.selectedRow td,.detailsview tr.even td{ 
+	background:#D0AC57; 
+	/*background:#808000; */
+	}
+
+.gridview tr.header {
+	background: #C5DBF7;
+}
+.gridview,.detailsview {
+	width: 100%;
+}
+
+.collapsePanel {
+	width:100%;
+	background-color:white;
+	overflow:hidden;
+}
+.collapsePanelHeader {
+	width:100%;		
+	height:32px;
+	background-image:url(../Images/bg-menu-main.png);
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-weight:bold;
+}
+
+/* Success Label */
+.successmsg {
+
+      color:#008109; 
+      font-weight:bold; 
+      text-align:center;
+      padding:5px;
+}
+
+/* Help */
+
+
+#helplayer {
+	position:absolute;
+	width:23px;
+	height:14px;
+	z-index:1;
+	left: 96%;
+	top: 195px;
+	color:#000000;
+	text-align:right;
+}
+
+#helplayercrumb {
+	position:absolute;
+	width:23px;
+	height:14px;
+	z-index:1;
+	left: 96%;
+	top: 220px;
+	color:#000000;
+	text-align:right;
+}
+
+
+.tablehelp {
+    border:0;
+    width:5%;
+}
+
+.helpplace {
+    vertical-align:bottom;
+    width:5%;
+}
+
+/* Table */
+
+.tablenine {
+    border:0;
+    width:90%;
+    margin-top:0px;
+    margin-right:auto;
+    margin-bottom:0px;
+    margin-left:auto;
+}
+
+.tableone {
+    border:0;
+    width:100%;
+}
+
+.tablemiddlenine {
+    border:0;
+    width:90%;
+}
+
+/* Spaces */
+.headingspace {
+    padding-top:18px;
+}
+
+.contspace {
+    padding-top:3px;
+}  
+
+.reqspace {
+   text-align:left;
+   padding-top:12px;
+}
+
+.validatespace {
+   text-align:left;
+   padding-top:5px;
+}
+
+.buttonspace {
+    padding-top:17px;
+}
+
+/* Fields size */
+.txtfield {
+    width:179px;
+    color:#585858;
+}
+
+.dropdownfield {
+    width:185px;
+    color:#585858;
+}
+
+.faxfieldsmall {
+    width:41px;
+    color:#585858;
+}
+
+.faxfield {
+    width:51px;
+    color:#585858;
+}
+
+.fieldsix {
+    width:60px;
+    color:#585858;
+}
+
+.fieldseven {
+    width:70px;
+    color:#585858;
+}
+
+.fieldeight {
+    width:80px;
+    color:#585858;
+}
+
+.suffixfield {
+    width:56px;
+    color:#585858;
+}
+
+.confirmlabel {
+    font-weight:bold;
+    padding:5px;
+}
+
+.franchgridtitle {
+    font-weight:bold;
+    text-align:left;
+    padding-left:4px;
+    padding-bottom:10px;
+}
+
+
+
+.subheadinggrey {
+    padding-bottom:10px;
+    padding-top:15px;
+    color:#999999;
+    font-weight:bold;
+}
+
+.minustxt {
+    vertical-align:middle;
+    padding-left:4px;
+    padding-right:4px;
+}
+
+/* Button */
+.buttonlayout {
+  border: 2px solid #737300;
+  color:#5A5A00; 
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:normal;
+  font-size:12px;
+  background-color:#ffffff;
+  outline:none;
+  width:70px;
+}
+
+
+/****** Style For AjaX Calander ******/
+.ajaxcalender .ajax__calendar_container
+{
+	background-color: #EFF2F5;
+	border: solid 1px #3366cc;
+	width: 177px;
+	z-index : 1;
+}
+
+.ajaxcalender .ajax__calendar_body
+{
+	background-color: #EFF2F5;
+	width: 100%;
+	height: 150px;
+}
+
+.ajaxcalender .ajax__calendar_header
+{
+	background-color: #ffffff;
+	margin-bottom: 4px;	
+}
+
+.ajaxcalender .ajax__calendar_title, .ajaxcalender .ajax__calendar_next, .ajaxcalender .ajax__calendar_prev
+{
+	padding-top: 3px;
+	color: #3366cc;
+	background-color: #f0f9fd;
+}
+
+.ajaxcalender .ajax__calendar_dayname
+{
+	color: #FF0000;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-top: 2px;
+}
+
+.ajaxcalender .ajax__calendar_day
+{
+	text-align: center;
+	padding: 2px 2px 1px 4px;
+}
+
+.ajaxcalender .ajax__calendar_hover .ajax__calendar_day, .ajaxcalender .ajax__calendar_hover .ajax__calendar_month, .ajaxcalender .ajax__calendar_hover .ajax__calendar_year, .ajaxcalender .ajax__calendar_active
+{
+	color: #000099;
+	font-weight: bold;
+	background-color: #ffffff;
+}
+
+.ajaxcalender .ajax__calendar_today
+{
+	font-weight: bold;
+	color: #3366cc;
+	background-color: #f0f9fd;
+}
+
+.ajaxcalender .ajax__calendar_other, .ajaxcalender .ajax__calendar_hover .ajax__calendar_today, .ajaxcalender .ajax__calendar_hover .ajax__calendar_title
+{
+	color: #0099cc;
+}
+
+/* Help Page */
+
+
+a.helplink  {
+ color: #003399;
+ background-color: transparent;
+ text-decoration: none;
+ font-weight: normal;
+}
+a.helplink:visited  {
+ color: #003399;
+ background-color: transparent;
+ text-decoration: none;
+}
+a.helplink:hover {
+ color: #000;
+ text-decoration: none;
+ background-color: transparent;
+}
+
+#headerhelp {
+	float: left;
+	width: 100%;
+	background-color: #4E4E50;
+	color: #EEE;
+	border-bottom: 16px solid #FFF;
+}
+
+#headerhelp .lib-name {
+	font-size: 1.3em;
+	float: left;
+	padding: 16px 16px 16px 40px;
+	margin: 0;
+}
+
+
+#helpcontent {
+ margin: 20px 0px 0 0px;
+ padding: 0;
+ line-height: 1.4;
+ clear: both;
+}
+
+#helpcontent p {
+ /*margin: 10px 20px 12px 0;*/
+ padding: 0px 7px 0px 7px;
+}
+
+.descrptitle {
+   color:#3D64C8;
+   font-weight:bold;
+}
+
+#helpcontent h2 {
+ background-color: transparent;
+ border-bottom: 1px solid #D0D0D0;
+ color: #444;
+ font-size: 14px;
+ font-weight: bold;
+ margin: 24px 0 2px 0;
+ padding: 5px;
+}
+
+#helpcontent h2[id] {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin-top: 50px;
+  color:#fff;
+  background-color:#4E4E50;
+  border-bottom: 1px double #696969;
+}
+
+
+#helpinfo {
+ margin: 20px 40px 0 40px;
+ padding: 0;
+ line-height: 1.4;
+ clear: both;
+}
+
+#helpinfo p {
+ margin: 10px 20px 12px 0;
+}
+
+#helpinfo h1 {
+color: #333;
+background-color: #efefef;
+font-weight: normal;
+font-size: 18px;
+margin: 0 0 15px 0;
+padding: 3px 2px 3px 10px;
+}
+
+#helpinfo h2 {
+ background-color: transparent;
+ border-bottom: 1px solid #D0D0D0;
+ color: #444;
+ font-size: 14px;
+ font-weight: bold;
+ margin: 24px 0 2px 0;
+ padding: 5px 0 6px 0;
+}
+
+#helpinfo h2[id] {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  margin-top: 50px;
+  border-bottom: 3px double #D0D0D0;
+}
+
+#helpinfo ul {
+ list-style-image: url('images/arrow111.gif');
+ padding: 0 0 0 18px;
+ margin: 8px 0 12px 0; 
+}
+
+#helpinfo li {
+ padding: 0;
+ margin: 0 0 6px 0;
+ vertical-align:middle;
+}
+
+.helpbullet 
+{
+    vertical-align:top; 
+    text-align:right; 
+    padding-top:5px; 
+    padding-right:5px; 
+    padding-left:20px;
+}
+
+.bullettitle 
+{
+    font-size:12px; padding-bottom:5px;
+}
+
+/* Debtor */
+
+ .errornew {
+    color:#ff0000;
+    text-align:left;
+  }
+     
+.bord {
+   	/*border:0px solid #ff0000;*/
+   	display:none;
+}
+
+   	/* So the overflow scrolls */
+.container {
+    overflow-x:hidden;overflow-y: auto;
+ }
+
+/* Keep the header cells positioned as we scroll */
+.container table th {
+    position:relative;
+ }
+
+ .container table, tr, td ul li{
+  list-style-type: none;
+}
+
+/* For alignment of the scroll bar */
+.container table tbody {
+    overflow-x:hidden;
+ } 
+
+.franchiselabel 
+{
+    float:left;
+    text-align:right;
+    font-weight:bold; 
+    padding-right:6px;
+    padding-bottom:7px;
+}
+.franchisedata 
+{
+    float:left;
+    text-align:left;
+    padding-bottom:7px;
+}
+
+.franchiseleftlabel 
+{
+    float:left;
+    padding-right:6px;
+    font-weight:bold;
+    text-align:right;
+    padding-top:2px;
+}
+
+.franchiselogfield 
+{
+    float:left;
+    text-align:left;
+    font-weight:bold;
+}
+
+.selectwidth
+{
+      width : 150px;
+}
+
+.fieldfirstName
+{
+    min-width: 100px;
+    color:#585858;
+    margin-left : 1px;
+    margin-right :1px;
+    margin-top : 1px;
+    margin-bottom : 1px;
+}
+.fieldlastName
+{
+    min-width: 100px;
+    color:#585858;
+}
+.fieldmiddleName
+{
+    min-width: 50px;
+    color:#585858;
+}
+
+.fieldtitle {
+    min-width:60px;
+    color:#585858;
+}
+
+.fieldAddress {
+    min-width:200px;
+    color:#585858;
+}
+.fieldCity {
+    min-width:80px;
+    color:#585858;
+}
+.fieldState
+{
+    width : 50px;
+}
+.fieldZip {
+    min-width:60px;
+    color:#585858;
+}
